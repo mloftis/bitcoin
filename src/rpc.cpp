@@ -2547,11 +2547,8 @@ int CommandLineRPC(int argc, char *argv[])
         if (strMethod == "listtransactions"       && n > 1) ConvertTo<boost::int64_t>(params[1]);
         if (strMethod == "listtransactions"       && n > 2) ConvertTo<boost::int64_t>(params[2]);
         if (strMethod == "listaccounts"           && n > 0) ConvertTo<boost::int64_t>(params[0]);
-<<<<<<< HEAD
         if (strMethod == "walletpassphrase"       && n > 1) ConvertTo<boost::int64_t>(params[1]);
-=======
         if (strMethod == "getblockbycount"        && n > 0) ConvertTo<boost::int64_t>(params[0]);
->>>>>>> jgarzik/getblockbycount
         if (strMethod == "sendmany"               && n > 1)
         {
             string s = params[1].get_str();
